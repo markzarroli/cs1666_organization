@@ -45,6 +45,49 @@ and be sure not to repeat any topics covered in previous presentations.
 ## Presentation 2
 ### Cuscuta
 
-- Topic 1 ... (XX minutes):
-  - ...
-- ...
+- Topic 1: UDP vs TCP (5 minutes)
+  - What is UDP?
+  - What is TCP?
+  - What does TCP give us that UDP does not?
+      - What do we need from TCP's framework?
+      - What is going in our UDP packets?
+      - How does rust help us out?
+      - Sequencing
+      - Packet age
+  - What impact do these have on design?
+      - Engineering ease
+          - How are we handling the packets?
+          - Data structures
+- Topic 2: Latency (5 minutes)
+  - Propogation delay
+  - Transmission delay
+  - Queue delay
+  - Packet loss/misordering
+  - How to resolve packets arriving not in order
+- Topic 3: Serialization (5 minutes)
+  - Why?
+  - How?
+  - Our implementation
+- Topic 4: Client Server model (20 minutes)
+    (Basic Overview - 5 minutes)
+    - Basic overview
+    - Authoritative Server
+      - Anti-cheat
+      - Uh-oh, latency
+    (Client-side prediction - 10 minutes)
+    - Client side prediction!
+      - Rubber Banding
+      - Sequencing
+        - Re-prediction
+        - Discrepancies after reconcilliation
+    (Entity Interpolation - 5 minutes)
+    - Entity interpolation
+      - Server Time Step / Dead Reckoning + issues with dead reckoning for our game
+      -  Entity Interpolation -> Basic example
+      - Issues with Interpolation in fast-paced games
+      - Lag compensation 
+- Topic 5: Our implementation (10 minutes)
+  - Current Status
+  - Code Examples
+  - Things that went well / Things we need to fix
+  - Plans moving forward- Topic 1 ... (XX minutes):
