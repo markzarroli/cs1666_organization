@@ -66,9 +66,33 @@ and be sure not to repeat any topics covered in previous presentations.
 ## Presentation 3
 ### Pirates
 
-- Topic 1 ... (XX minutes):
-  - ...
-- ...
+- Topic 1: Introduction + History (12 minutes):
+  - Brief history of algorithm
+    - 
+    - Model synthesis (2007)
+    - Wave function collapse (2016)
+      - Evolution from model synthesis to WFC
+    - Ties to quantum computing
+      - Wave function collapse overview
+      - How WFC models quantum particle behavior
+    - Reasons for choosing algorithm
+      - WFC vs perlin noise and the needs of our game
+- Topic 2: Wave Function Collapse Example (15 minutes):
+  - What is entropy in WFC
+    - How we choose the next tile
+    - Effects of collapsing a tile on entropy
+  - Writing WFC rules
+    - Hard-coded rules vs. dynamic sample
+      - pros and cons of each approach
+        - hard-coded is less flexible but simpler
+        - dynamic sample is resuable, reduces rewriting code for new tilemap environments but more complex to implement
+  - Animated example walkthrough of algorithm
+    - entropy comparison at beginning, each step, and end state
+- Topic 3: Code Explanation + Walkthrough (15 minutes):
+  - Tailoring WFC
+    - Weighing tiles, seeding pathways + fixed landmarks
+- Topic 4: Conclusion (3 min)
+  - Pros and cons
 
 ## Presentation 4
 ### Cuscuta
