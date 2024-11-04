@@ -68,7 +68,6 @@ and be sure not to repeat any topics covered in previous presentations.
 
 - Topic 1: Introduction + History (12 minutes):
   - Brief history of algorithm
-    - 
     - Model synthesis (2007)
     - Wave function collapse (2016)
       - Evolution from model synthesis to WFC
