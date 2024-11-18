@@ -96,6 +96,48 @@ and be sure not to repeat any topics covered in previous presentations.
 ## Presentation 4
 ### Cuscuta
 
-- Topic 1 ... (XX minutes):
-  - ...
-- ...
+- Topic 1: Introduction + Overview (7 minutes)
+  - Topic Overview
+    - Start Room Spawning
+    - Random Room Spawning
+    - Inner Walls
+    - Backtracking
+  - Runtime of creating world map & storing rooms
+    - Diagram showing scaled-down world map and room additions
+    - Explanation of basic data storage
+  - Overall Generation Ideas 
+    - Why we chose room by room generation & not complete generation on spawn
+  - Markov Chains
+    - Uses probability-based transitions and an initial state to determine the next room type using previous data 
+    - Examples, such as word prediction/autocomplete
+- Topic 2: Spawning Start Room (15 minutes)
+  - Generating doors in start room
+    - Tagging each door by type and explain utilization
+  - Room Spawning Feasibility Check
+    - Method for checking if a room can spawn by evaluating three random room sizes outside of each door, destroying door if no rooms can spawn
+  - Room Transition Mechanics
+    - Explanation of door interaction and room switching
+    - Checking world map to see if room exists
+      - Runtime explanation of this check
+    - If room exists, grab its dimensions from room array
+      - Runtime explanation of this check
+- Topic 3: Random Room Spawning  (20 minutes)
+  - Each room functions as a state in a Markov chain with probability-based transitions
+  - Rooms are tagged with attributes:
+    - Carnage level (high/low)
+    - Stealth level (high/low)
+    - Number of enemies, items, inner walls
+  - Determining Room Metrics
+    - Establish initial state vector, detailing initial values
+    - Utilizing transition matrix to guide room progression based on prior states
+  - Challenges and Solutions
+    - Room spawning edge case
+  - Inner Wall Spawning
+    - Randomly generate  0-3 wall segments with direction vectors
+    - Determine a random spawn point based on length & direction vector
+    - Spawn wall and set enable its collision
+- Topic 4: Conclusions (3 minutes)
+  - Pros and Cons of Markov Chains
+
+
+
